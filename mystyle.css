@@ -430,7 +430,7 @@ header{
 /* ОБЛОЖКА */
 
 .cover{
-  background:
+  /* background:
   radial-gradient(rgba(0, 0, 57, 0.758)10%, rgba(255, 255, 255, 0)),
   linear-gradient(to bottom right, rgba(11, 24, 121, 0.629), rgba(115, 3, 115, 0.445)),
   repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.123) 40px,
@@ -445,17 +445,39 @@ header{
   rgba(255, 0, 0, 0.123) 300px), 
   repeating-linear-gradient(23deg,  rgba(255, 0, 0, 0.123) 50px, rgba(254, 250, 207, 0.211) 100px,
   rgba(255, 255, 255, 0.204) 150px,  rgba(169, 241, 255, 0.089) 200px, rgba(0, 0, 255, 0.253) 250px,
-  rgba(109, 1, 167, 0.393) 300px,  rgba(255, 64, 255, 0.389) 350px, rgba(255, 0, 0, 0.082)  370px), url(стена2.jpg);
-  background-position: center;
-  background-size:contain;
-  color: #fff;
-  padding: 100px 20%; /* top-bottom   right-left */
+  rgba(109, 1, 167, 0.393) 300px,  rgba(255, 64, 255, 0.389) 350px, rgba(255, 0, 0, 0.082)  370px), url(стена2.jpg); */
+  /* background-image: url(foto/афиша.jpg); */
+  /* background-size: cover; Растягиваем картинку  по ширине */
+  /* background-repeat: no-repeat; Картинка фона без повторения */
+  /* background-position: center; Позиция фона по центру */
+  /* background-position: center;
+  background-size:contain; */
+  /* filter: blur(5px); Размытие картинки */
+  /* color: #fff; */
+  padding: 100px 20%; 
   padding-bottom: 70px;
   max-width: 1600px;
+  height: 400px;
   text-align: center;
 }
 
-.cover-div{text-align: center;}
+.imgblur{
+  top: -40px;
+  left: -10px;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 600px;
+  background: url(foto/афиша.jpg); /* Путь к картинке */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); /* Размытие картинки */
+}
+
+.cover-div{position:absolute ;text-align: center;z-index: 100; left: 550px; top: 200px;
+
+}
 
 .cover-div p{
 margin-top: 1.5rem;
@@ -509,11 +531,12 @@ body{
   width: 100%;
   margin: auto;
 }
-main{
+
+/* main{
   background-color: rgba(255, 255, 255, 0.455);
   max-width: 1600px;
   width: 100%;
-}
+} */
 
 @media (max-width: 767px){
   *{
@@ -609,27 +632,6 @@ section{
   max-width: 1600px;
 }
 
-/* ПЕДАГОГИ */
-
-.teacher {text-align: left;}
-
-.teacher-img{
-  border-radius: 1rem;
-  margin: 1rem;
-  margin-left: 3rem;
-  margin-top: 0px;
-  padding: 0;
-  float: right; 
-  width: 25%;
-  box-shadow: 
-    0 0 .2rem #fff,
-    0 0 .2rem #fff,
-    0 0 2rem #fff,
-    0 0 0.8rem #fff,
-    0 0 1.8rem #fff,
-    inset 0 0 1.3rem #fff;
-    
-}   
 
 /* ПОДВАЛ */
 
@@ -1000,31 +1002,6 @@ section.gallery{
   transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
 }
 
-/* КНОПКА 3 */
-
-.pressed-btn {
-  text-transform: uppercase;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  position: relative;
-  width: 20%;
-  min-width: 12rem;
-  height: 20%;
-  margin: 30px;
-  margin-left: 45px;
-  border-radius: 30px;
-  background-image: linear-gradient(45deg, #6d00a7 0%, #d033de 50%, #23007b 100%);
-  background-position: 100% 0;
-  background-size: 200% 200%;
-  color: white;
-  box-shadow: 0 16px 32px 0 rgba(78, 0, 120, 0.601);
-  transition: .5s;
-}
-.pressed-btn:hover {
-  box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
-  background-position: 0 0;
-}
 
 /* КНОПКА 4 */
 
@@ -2134,7 +2111,7 @@ footer{
   margin: 1rem auto;
 }
 
-.grid-container div {
+.grid-container .grid-div {
   width: 150px;
   margin: 0 1.2rem 1.2rem 0;
   display: inline-block;
@@ -2147,11 +2124,53 @@ footer{
   background-color: rgb(255, 255, 255);
 }
 
-.grid-container div:hover img {
+/* для карточек педагогов!!!!! */
+.grid-container.teacher{ 
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* шаблон для колонок */
+  column-gap: 1rem;
+  row-gap: 0rem;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.card-teacher .grid-div {
+  /* width: 150px; */
+  margin: 0 1.2rem 1.2rem 0;
+  display: inline-block;
+  width: 96%;
+  border: solid 2px rgba(85, 55, 96, 0.453);
+  padding: 5px;
+  box-shadow: 5px 5px 5px rgba(59, 15, 69, 0.623);
+  border-radius: 5px;
+  transition: all .25s ease-in-out;
+  background-color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-container.teacher .card-teacher{
+  margin-bottom: 0;
+  display: inline-block;
+  width: 90%;
+  border: none;
+  padding: 5px;
+  box-shadow: none;
+  border-radius: 0;
+  transition: all .25s ease-in-out;
+  background-color:#00b3ff00;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* для карточек педагогов!!!!! */
+
+.grid-container .grid-div:hover img {
   filter: grayscale(0);
 }
 
-.grid-container div:hover {
+.grid-container .grid-div:hover {
   border-color: rgb(255, 255, 255);
   box-shadow: 
     0 0 .2rem #fff,
@@ -2162,14 +2181,14 @@ footer{
     inset 0 0 1.3rem #fff;
 }
 
-.grid-container div img {
+.grid-container .grid-div img {
   width: 100%;
-  filter: grayscale(100%);
+  /* filter: grayscale(50%); */
   border-radius: 5px;
   transition: all .25s ease-in-out;
 }
 
-.grid-container div p {
+.grid-container .grid-div p {
   color: #64128e;
 }
 
@@ -2190,7 +2209,7 @@ footer{
 	top: 0;    
 	left: 0;   
 	/* background:  linear-gradient(to bottom right, #de11b9ad, #510ed69b); */
-  background: #eec5ff;
+  /* background: #eec5ff; */
 	opacity: 0.3;    
   transition: all .25s ease-in-out;
 }
@@ -2198,4 +2217,132 @@ footer{
 .grid-container div:hover .gradient:after {
   background: none;
   transition: all .25s ease-in-out;
+}
+
+/*................. ВСПЛЫВАЮЩЕЕ МОДАЛЬНОЕ ОКНО "ПОДРОБНЕЕ" О ПЕДАГОГАХ .....................*/
+
+/* Стили всплывающего окна по-умолчанию */
+.modal {
+  position: fixed; /* фиксированное положение */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.545); /* затемнее фона вокруг*/
+  z-index: 1050;
+  opacity: 0; /* по умолчанию модальное окно прозрачно */
+  transition: opacity .2s ease-in; /* анимация перехода */
+  pointer-events: none; /* элемент невидим для событий мыши */
+  margin: 0;
+  padding: 0;
+}
+
+/* При отображении модального окно, когда якорная ссылка активировалась */
+.modal:target { 
+  opacity: 1; /* делаем окно видимым */
+  pointer-events: auto; /* элемент видим для событий мыши */
+  overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+
+@media (min-width: 1100px) {
+  .modal-dialog {
+      min-width: 800px;
+      margin: 30px auto; /* отображение окна по центру */
+    }
+  }
+
+@media (min-width: 576px) {
+.modal-dialog {
+    max-width: 500px;
+    margin: 30px auto; /* отображение окна по центру */
+  }
+}
+/* Стили для блока с контентом окна */ 
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(45deg, #7100ae 0%, #a72193 50%, #23007b 100%);
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.221);
+  border-radius: .3rem;
+  outline: 0;
+}
+@media (min-width: 768px) {
+.modal-content {
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+}
+/* Стили заголовка окна */
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #ffffffb2;
+}
+/* Стили кнопки "х" ("Закрыть")  */
+.close {
+  float: right;
+  font-family: sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 2px 2px rgb(0, 0, 0);
+  opacity: .5;
+  text-decoration: none;
+}
+/* Стили для закрывающей кнопки в фокусе или наведении */
+.close:focus, .close:hover {
+  color: rgb(119, 35, 147);
+  text-decoration: none;
+  cursor: pointer;
+  opacity: .75;
+}
+/* Стили блока основного содержимого окна */
+.modal-body {
+/* position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; */
+  padding: 15px;
+  overflow: auto;
+}
+
+
+/* ..................... КНОПКА "ПОДРОБНЕЕ" ....................... */
+
+.pressed-btn {
+  text-transform: uppercase;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  min-width: 12rem;
+  height: 2.2rem;
+  margin: 10px auto;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #6d00a7 0%, #ee64ce 50%, #23007b 100%);
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  color: white;
+  box-shadow: 0 6px 15px 0 rgba(78, 0, 120, 0.601);
+  transition: .5s;
+}
+.pressed-btn a{margin-top: 0.6rem;}
+
+.pressed-btn:hover {
+  box-shadow: none;
+  background-position: 0 0;
+  letter-spacing: 0.8rem;
 }
