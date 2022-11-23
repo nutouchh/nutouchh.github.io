@@ -2105,7 +2105,7 @@ footer{
 
 
 .grid-container {
-  columns: 4 250px;
+  columns: 3 333px;
   column-gap: 1.5rem;
   width: 90%;
   margin: 1rem auto;
@@ -2345,4 +2345,22 @@ footer{
   box-shadow: none;
   background-position: 0 0;
   letter-spacing: 0.8rem;
+}
+
+/* ................... ПРОГРЕСС БАР ................. */
+
+.progress-line {
+  height: .4rem;
+  position: fixed;
+  top: 3.8rem;
+  left:0;
+  background: linear-gradient(45deg, #6d00a7 0%, #f949d0 50%, #23007b 100%);
+  /* background-color: #fff; */
+  z-index: 1000;
+  /* box-shadow: 
+    0 0 .1rem #fff,
+    0 0 .2rem #fff,
+    0 0 0.8rem #fff,
+    0 0 1.8rem #fff,
+    inset 0 0 .2rem #fff; */
 }
