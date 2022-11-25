@@ -24,11 +24,10 @@
                             <ul class="menu__box">
                                 <hr>
                                 <h3>НАВИГАЦИОННОЕ МЕНЮ:</h3><hr><br>
-                                <li class="menu__item"><a href = "#">Кто мы?</a></li>
-                                <li class="menu__item"><a href = "index.html">Педагоги</a></li>
-                                <li class="menu__item"><a href = "button.html">Солисты</a></li>
+                                <li class="menu__item"><a href = "index.html">Кто мы?</a></li>
+                                <li class="menu__item"><a href = "news.html">Новости</a></li>
+                                <li class="menu__item"><a href = "teachers.html">Педагоги</a></li>
                                 <li class="menu__item"><a href = "foto.html">Фотогалерея</a></li>
-                                <li class="menu__item"><a href = "video.html">Видеогалерея</a></li>
                                 <li class="menu__item"><a href = "team.html">Стать частью мюзикла</a></li>
                             </ul>
                 </div>
@@ -37,60 +36,27 @@
                     </div> -->
                 <nav id="main-nav">
                         <ul id="main-menu">
-                            <li class="m-m-li"><a href = "#">Кто мы?</a></li>
-                            <li class="m-m-li"><a href = "index.html">Педагоги</a></li>
-                            <li class="m-m-li"><a href = "button.html">Солисты</a></li>
+                            <li class="m-m-li"><a href = "index.html">Кто мы?</a></li>
+                            <li class="m-m-li"><a href = "news.html">Новости</a></li>
+                            <li class="m-m-li"><a href = "teachers.html">Педагоги</a></li>
                             <li class="m-m-li"><a href = "foto.html">Фотогалерея</a></li>
-                            <li class="m-m-li"><a href = "video.html">Видеогалерея</a></li>
                             <li class="m-m-li"><a href = "team.html">Стать частью мюзикла</a></li>
                         </ul>
                 </nav>
             </div>
         </header>
 
-
-        <!-- ОБЛОЖКА -->
-        <section class="cover">
-            <div class="cover-div">
-                <!-- <h1>ШКОЛА<br>МЮЗИКЛА</h1>
-                <hr>
-                <p>Не знаешь, что выбрать - танцы или вокал?<br>Тебе к нам!</p> -->
-            </div>
-        </section>
-
-
+        <!-- ПРОГРЕСС БАР -->
+        <div class="progress-line js-pr-line"></div>
+        <script src="jss.js"></script>
 
         <!-- УНИКАЛЬНЫЙ КОНТЕНТ -->
         <main>
-            <div class="cont-flex">
-                <div class = "content">
-    
-                    <ul id="cont-s">
-                        <h3>СОДЕРЖАНИЕ СТАТЬИ:</h3>
-                        <li><a href="#">Главное меню</a></li>
-                        <li><a href="#">Вступление</a></li>
-                        <li><a href="#">Татьяна Макушева</a></li>
-                        <li><a href="#">Марианна Шакур</a></li>
-                        <li><a href="#">Ирина Епифанова</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                </div>
-    
-                <section >
-                    <div class="intro">
-                        <p >♡♡♡Школа мюзикла открывает свои двери в РТУ МИРЭА♡♡♡<br><br>
-                            Ты можешь стать частью большого шоу! Ведь мюзикл – это музыкально-сценическое произведение, в котором переплетаются песни, диалоги, музыка и немаловажную роль играет хореография. Поэтому в школе проходят занятия вокалом, танцами , актерским мастерством и смежными дисциплинами с самыми сильными педагогами Центра культуры. <br><br>
-                            Главная задача, которая стоит перед нами – сделать из вас настоящих артистов! <br><br>
-                            Что вас ждет? Отработка вокальных партий, работа над драматургией номера, музыкальностью, дизайн вокала, поиск образа, развитие пластики, дикции, работа со зрителями и пространством сцены.
-                            По мере оттачивания мастерства начинается самое интересное - постановка музыкального спектакля (мюзикл).<br><br>
-                            Становись частью нашей команды!
-                        </p>
-                    </div>
-                </section>
-            </div>
+            
+            <div class="space2"></div>
 
             <section>
-                <div class><h2>Заполни форму и стань частью коллектива! </h2></div>
+                <h2 class="h2">Заполни форму и стань частью коллектива! </h2>
                 <form action="" method="get" autocomplete="on" enctype="multipart/form-data" name="team"> 
                     <div class="forms">
                     <fieldset><legend><h3>Личные данные</h3></legend>
@@ -152,8 +118,8 @@
                     <fieldset><legend><h3>Ждем тебя в нашем коллективе!</h3></legend>
                         <div class="fieldset butt">
                             <p class="full-width"><label><input type="checkbox" checked required> Я согласен(-а) на обработку персонльных данных </input></label></p>
-                            <button type="submit">Отправить</button>
-                            <button type="reset">Очистить</button>
+                            <button type="submit" class="btn-form">Отправить</button>
+                            <button type="reset" class="btn-form">Очистить</button>
                         </div>
                     </fieldset>
                     </div>
@@ -163,30 +129,10 @@
             <section>
                 <article>
                     <h2 id = "Topic5">Как нас найти?</h2>
-                    <p>Всё просто! Занятия проходят в главном корпусе Российского технологического унивпрситета "МИРЭА"<br>по адресу г.Москва, просп. Вернадского, 78, стр. 4, Москва</p>
+                    <p>Всё просто! Занятия проходят в главном корпусе Российского технологического университета "МИРЭА" по адресу г.Москва, просп. Вернадского, 78, стр. 4<br><br></p>
                     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad33ce3faedd1c4c51fd63bb43f143f7123a02510501fd13c1078cac5ec95bfa1&amp;width=695&amp;height=436&amp;lang=ru_RU&amp;scroll=true"></script>
                 </article>
             </section> 
-            
-            <div class="notification-box">
-                <span class="notification-count">3</span>
-                <div class="notification-bell">
-                  <span class="bell-top"></span>
-                  <span class="bell-middle"></span>
-                  <span class="bell-bottom"></span>
-                  <span class="bell-rad"></span>
-  
-                </div>
-                <ul class="notifications">
-                    <h3>КАКИЕ-ТО УВЕДОМЛЕНИЯ:</h3><br>
-                    <li class="nt-item"><a href = "#">Кто мы?</a></li>
-                    <li class="nt-item"><a href = "C:\Users\Anna\Desktop\фронтенд\index.html">Педагоги</a></li>
-                    <li class="nt-item"><a href = "C:\Users\Anna\Desktop\фронтенд\button.html">Солисты</a></li>
-                    <li class="nt-item"><a href = "C:\Users\Anna\Desktop\фронтенд\foto.html">Фотогалерея</a></li>
-                    <li class="nt-item"><a href = "C:\Users\Anna\Desktop\фронтенд\video.html">Видеогалерея</a></li>
-                    <li class="nt-item"><a href = "C:\Users\Anna\Desktop\фронтенд\team.html">Стать частью мюзикла</a></li>
-                </ul>
-            </div>
 
         </main>
 
@@ -204,12 +150,9 @@
                     </p>
                 </div>
                 <div class="footer-blocks2">
-                        <img src="foto/лого.png" class="f-l-1">
-                        <img src="foto/цкт.png" class="f-l-2">
-                        <!-- <li><h3>ПРИСОЕДИНЯЙТЕСЬ</h3></li> -->
-                        <img src="foto/мирэа.png" class="f-l-3">
-                        <img src="foto/студ.jpg" class="f-l-4">
-                    </ul>
+                    <img src="foto/logoM.svg" class="f-l-1">
+                    <img src="foto/мирэа.png" class="f-l-3">
+                    <img src="foto/цкт.png" class="f-l-2">
                 </div>
                 <div class="footer-blocks3">
                     <h3>СОЦИАЛЬНЫЕ СЕТИ</h3>
