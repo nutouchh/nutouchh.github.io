@@ -18,32 +18,6 @@ h1{
     1px 1px 30px rgb(55, 37, 119);
 }   
 
-@media (max-width: 767px){
-  h1{
-    font-size: 3rem;
-    font-weight: 300;
-    animation: none;
-  }
-  h2{
-    font-size: 1.25rem;
-    font-weight: 150;
-  }
-  h3{
-    font-size: 1rem;
-    font-weight: 150;
-  }
-  p{
-    font-size: 1rem;
-    font-weight: 150;
-  }
-  a{
-    margin: 1rem;
-    font-size: 1rem;
-    animation: none;
-  } 
-  
-}
-
 h2{
   color: #fff;
   font-family: 'Comfortaa', cursive;
@@ -1003,6 +977,19 @@ iframe{
     font-weight: 100;
   }
 
+  h1{
+    font-size: 3rem;
+    font-weight: 300;
+    animation: none;
+  }
+
+}
+
+@media (max-width: 560px){
+  .cover {
+    background-size:  auto 150%;
+  }
+  
 }
 
 .intro{
