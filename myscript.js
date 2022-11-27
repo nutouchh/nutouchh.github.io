@@ -25,3 +25,4 @@ VK.Widgets.Post('vk_post_-210924089_336', -210924089, 336, 'Jhmb5U5worMODJUqzg4q
 VK.Widgets.Post('vk_post_-210924089_334', -210924089, 334, '9_o5hRdFOli6jjzirpLTHw4IiMPL');
 VK.Widgets.Post('vk_post_-210924089_332', -210924089, 332, 'EOrctJJlpRg0_iHrllM96xLBB9To');
 VK.Widgets.Post('vk_post_-210924089_299', -210924089, 299, '-LhZ054Gd9deSeLvRHEX4i2pq8Yv');
+

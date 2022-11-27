@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="mystyle.css"> 
         <link rel="icon" type="image/png" href="foto/фави.png">
     </head>
-    <body>
+    <body onLoad="getSecs()">
         <!-- МЕНЮ -->
         <header>
             <div class="container">
@@ -156,8 +156,10 @@
             <hr>
 
             <section>
+                <h3>Вы здесь уже  <span id='timer-counter'></span> минут, но все еще не с нами??</h3><br>
                 <h3>Скорее смотри другие разделы сайта и знакомься ближе со Школой Мюзикла!<br><br>Будем рады видеть тебя в нашем коллективе!</h3>
             </section>
+            <script src="time.js"></script>
             
         </main>
 
@@ -188,6 +190,6 @@
                 </div>
             </section>
         <p><small>© copyright 2021-2022 "Школа мюзикла РТУ МИРЭА", website development: Chasovskikh Anna Andreevna</small></p>
-    </footer>
+        </footer>
     </body>
 </html>

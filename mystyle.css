@@ -924,7 +924,7 @@ iframe{
 /* ОБЛОЖКА */
 
 .cover{
-  background-image: url(foto/cover.jpg);
+  background-image: url(foto/cover.JPG);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -1090,4 +1090,16 @@ iframe{
 .block-div{
   display: flex;
   gap: 1rem;
+}
+
+/* ВРЕМЯ */
+
+#timer-counter{
+  font-family: 'Comfortaa', cursive;
+  color:rgb(255, 255, 255);
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff;
+  font-size: 2rem;
 }
