@@ -12,18 +12,15 @@ h1{
   text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
-    0 0 30px #fff,
-    0 0 42px #fff;
-    /* ,
-    0 0 82px rgb(128, 0, 197),
-    0 0 92px rgb(154, 0, 197),
-    0 0 102px rgb(171, 0, 197),
-    0 0 150px rgb(171, 0, 197); */
+    0 0 20px #fff,
+    0 0 25px rgb(255, 255, 255),
+    1px 1px 27px rgb(45, 38, 126),
+    1px 1px 30px rgb(55, 37, 119);
 }   
 
-/* @media (max-width: 767px){
+@media (max-width: 767px){
   h1{
-    font-size: 2.0rem;
+    font-size: 3rem;
     font-weight: 300;
     animation: none;
   }
@@ -45,7 +42,7 @@ h1{
     animation: none;
   } 
   
-} */
+}
 
 h2{
   color: #fff;
@@ -125,6 +122,7 @@ hr{
   0 0 0.8rem #fff,
   0 0 1.8rem #fff,
   inset 0 0 1.3rem #fff;
+  border: solid 1px #fff;
 }
 
 h3{
@@ -159,7 +157,7 @@ a{
   text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
-    0 0 21px rgb(255, 255, 255);
+    0 0 21px #fff;
 }
 li{list-style: none;}
 
@@ -177,21 +175,6 @@ header{
 .container{
   background:
   linear-gradient(to right,  rgb(160, 39, 126), rgb(115, 42, 146), rgb(37, 50, 152));
-  /* linear-gradient(to right,rgba(141, 0, 149, 0.586), rgba(0, 17, 148, 0.488)), */
-  /* repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.123) 40px,
-  rgba(249, 243, 179, 0.24) 80px, rgba(255, 255, 255, 0.286) 120px,
-  rgba(169, 241, 255, 0.186) 160px, rgba(0, 0, 255, 0.373) 200px,
-  rgba(109, 1, 167, 0.379) 240px, rgba(255, 64, 255, 0.503) 280px,
-  rgba(255, 0, 0, 0.123) 300px), 
-  repeating-linear-gradient(190deg, rgba(255, 0, 0, 0.123) 40px,
-  rgba(255, 251, 202, 0.195) 80px, rgba(255, 255, 255, 0.2) 120px,
-  rgba(169, 241, 255, 0.122) 160px, rgba(0, 0, 255, 0.373) 200px,
-  rgba(109, 1, 167, 0.214) 240px, rgba(255, 64, 255, 0.356) 280px,
-  rgba(255, 0, 0, 0.123) 300px), 
-  repeating-linear-gradient(23deg,  rgba(255, 0, 0, 0.123) 50px, rgba(254, 250, 207, 0.211) 100px,
-  rgba(255, 255, 255, 0.204) 150px,  rgba(169, 241, 255, 0.089) 200px, rgba(0, 0, 255, 0.253) 250px,
-  rgba(109, 1, 167, 0.393) 300px,  rgba(255, 64, 255, 0.389) 350px, rgba(255, 0, 0, 0.082)  370px), */
-  /* rgb(6, 4, 28); */
   height: 61px;
   width: 100%;
   position: fixed;
@@ -376,86 +359,7 @@ header{
 
 
 
-/* ОБЛОЖКА */
 
-.cover{
-  /* background:
-  radial-gradient(rgba(0, 0, 57, 0.758)10%, rgba(255, 255, 255, 0)),
-  linear-gradient(to bottom right, rgba(11, 24, 121, 0.629), rgba(115, 3, 115, 0.445)),
-  repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.123) 40px,
-  rgba(10, 13, 70, 0.445) 80px, rgba(25, 4, 82, 0.338) 120px,
-  rgba(169, 241, 255, 0.186) 160px, rgba(0, 0, 255, 0.373) 200px,
-  rgba(109, 1, 167, 0.379) 240px, rgba(255, 64, 255, 0.503) 280px,
-  rgba(255, 0, 0, 0.123) 300px), 
-  repeating-linear-gradient(190deg, rgba(255, 0, 0, 0.123) 40px,
-  rgba(255, 251, 202, 0.195) 80px, rgba(255, 255, 255, 0.2) 120px,
-  rgba(169, 241, 255, 0.122) 160px, rgba(0, 0, 255, 0.373) 200px,
-  rgba(109, 1, 167, 0.214) 240px, rgba(255, 64, 255, 0.356) 280px,
-  rgba(255, 0, 0, 0.123) 300px), 
-  repeating-linear-gradient(23deg,  rgba(255, 0, 0, 0.123) 50px, rgba(254, 250, 207, 0.211) 100px,
-  rgba(255, 255, 255, 0.204) 150px,  rgba(169, 241, 255, 0.089) 200px, rgba(0, 0, 255, 0.253) 250px,
-  rgba(109, 1, 167, 0.393) 300px,  rgba(255, 64, 255, 0.389) 350px, rgba(255, 0, 0, 0.082)  370px), url(стена2.jpg); */
-  /* background-image: url(foto/афиша.jpg); */
-  /* background-size: cover; Растягиваем картинку  по ширине */
-  /* background-repeat: no-repeat; Картинка фона без повторения */
-  /* background-position: center; Позиция фона по центру */
-  /* background-position: center;
-  background-size:contain; */
-  /* filter: blur(5px); Размытие картинки */
-  /* color: #fff; */
-  padding: 100px 20%; 
-  padding-bottom: 70px;
-  max-width: 1600px;
-  height: 400px;
-  text-align: center;
-}
-
-.imgblur{
-  top: -40px;
-  left: -10px;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 600px;
-  background: url(foto/афиша.jpg); /* Путь к картинке */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  filter: blur(5px); /* Размытие картинки */
-}
-
-.cover-div{position:absolute ;text-align: center;z-index: 100; left: 550px; top: 200px;
-
-}
-
-.cover-div p{
-margin-top: 1.5rem;
-font-family: 'Comfortaa', cursive;
-font-size: 1.2rem;
-font-weight: 250;
-text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 30px #fff,
-    0 0 42px #fff,
-    0 0 82px rgb(128, 0, 197),
-    0 0 92px rgb(154, 0, 197),
-    0 0 102px rgb(171, 0, 197),
-    0 0 150px rgb(171, 0, 197);
-}
-
-@media (max-width:767px) {
-  .cover{
-    max-width: none;
-    padding-bottom: 40px;
-  }
-  
-  .cover-div p{
-    font-size: 0.9rem;
-    font-weight: 100;
-  }
-
-}
 
 /* ............................... ОСНОВНАЯ ЧАСТЬ .......................... */
 
@@ -477,82 +381,13 @@ body{
     rgba(109, 1, 167, 0.393) 300px,  rgba(255, 64, 255, 0.389) 350px, rgba(255, 0, 0, 0.082)  370px), 
     rgb(6, 4, 28);
   margin: auto;
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
 }
 
 section{
   padding: 2rem;
   text-align: justify;
   max-width: 1600px;
-}
-
-/* БЛОК-СОДЕРЖАНИЕ */
-
-.content {
-  background:
-    radial-gradient(rgba(0, 0, 57, 0.758)10%, rgba(255, 255, 255, 0)),
-    linear-gradient(to bottom right, rgba(11, 24, 121, 0.629), rgba(115, 3, 115, 0.445)),
-    repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.123) 40px,
-    rgba(10, 13, 70, 0.445) 80px, rgba(25, 4, 82, 0.338) 120px,
-    rgba(169, 241, 255, 0.186) 160px, rgba(0, 0, 255, 0.373) 200px,
-    rgba(109, 1, 167, 0.379) 240px, rgba(255, 64, 255, 0.503) 280px,
-    rgba(255, 0, 0, 0.123) 300px), 
-    repeating-linear-gradient(190deg, rgba(255, 0, 0, 0.123) 40px,
-    rgba(255, 251, 202, 0.195) 80px, rgba(255, 255, 255, 0.2) 120px,
-    rgba(169, 241, 255, 0.122) 160px, rgba(0, 0, 255, 0.373) 200px,
-    rgba(109, 1, 167, 0.214) 240px, rgba(255, 64, 255, 0.356) 280px,
-    rgba(255, 0, 0, 0.123) 300px), 
-    repeating-linear-gradient(23deg,  rgba(255, 0, 0, 0.123) 50px, rgba(254, 250, 207, 0.211) 100px,
-    rgba(255, 255, 255, 0.204) 150px,  rgba(169, 241, 255, 0.089) 200px, rgba(0, 0, 255, 0.253) 250px,
-    rgba(109, 1, 167, 0.393) 300px,  rgba(255, 64, 255, 0.389) 350px, rgba(255, 0, 0, 0.082)  370px), url(стена2.jpg);
-   background-position: center;
-  background-size:contain;
-  display: flex;
-  flex-wrap: wrap;
-  color: #fff;
-  width: 25%;
-  min-width: 350px;
-  float: left;
-  margin: 2rem;
-  border: 0.2rem solid #fff;
-  border-radius: 1rem;
-  padding: 0.4em;
-  box-shadow: 
-    0 0 .2rem #fff,
-    0 0 .2rem #fff,
-    0 0 2rem #fff,
-    0 0 0.8rem #fff,
-    0 0 1.8rem #fff,
-    inset 0 0 1.3rem #fff;
-              
-}
-@media (max-width: 650px){
-  .content #cont-s h3{font-size: 1rem;}
-  .content #cont-s a{font-size: .7rem;}
-  .content {min-width: none;}
-}
-
-.content li{list-style: none; margin-top: 1rem;margin-bottom: 1rem;}
-.content h3{padding-left: 0; margin: 1rem 0;}
-#cont-s{ padding-left: 1rem; width: 100%;}
-
-@media (max-width: 767px){
-  .cont-flex{
-    display: flex;
-    flex-direction:column;
-  }
-  .content{
-    margin: 0.8rem auto;
-    text-align: center;
-    width: 80%;
-    float: none;
-  }
-  .content h3{font-size: 1.2rem;}
-  #cont-s{
-    padding-left:0;
-    margin: 0rem auto;
-    padding: 1rem auto;
-  }
 }
 
 /* ...................... ПОДВАЛ НА GRID .............................. */
@@ -655,7 +490,8 @@ footer{
 
 form{
   background: linear-gradient(45deg, #6d00a796 0%, #ee64ce78 50%, #23007b92 100%);
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
   width:80%;
   margin:1rem auto;
   padding: 1rem;
@@ -1105,4 +941,166 @@ iframe{
 }
 .news-section{
   padding-bottom:10px;
+}
+
+
+
+/* ............................ ГЛАВНАЯ СТРАНИЦА .............................. */
+
+/* ОБЛОЖКА */
+
+.cover{
+  background-image: url(foto/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 100px 20%; 
+  padding-bottom: 70px;
+  max-width: 1600px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-items:flex-end; */
+}
+
+.cover-div{
+  position:absolute;
+  padding: 19px;
+  border-radius: 10px;
+  top: 32%;
+  z-index: 1;
+  backdrop-filter: blur(2px);
+  /* background-color: #00000041; */
+}
+
+.cover-div p{
+  margin-top: 1.5rem;
+  text-align: center;
+  line-height: 2rem;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.2rem;
+  font-weight: 250;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 25px rgb(167, 18, 142),
+    1px 1px 27px rgb(124, 8, 120),
+    1px 1px 30px rgb(172, 17, 133),
+    1px 1px 30px rgb(165, 13, 127);
+}
+
+@media (max-width:767px) {
+  .cover{
+    max-width: none;
+    padding-bottom: 40px;
+  }
+  
+  .cover-div p{
+    font-size: 0.9rem;
+    font-weight: 100;
+  }
+
+}
+
+.intro{
+  text-align: center;
+}
+
+
+/* ........................ КАРТОЧКИ ........................  */
+
+.post-wrap {
+  /* overflow: hidden;
+  overflow-x: scroll; */
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.post-item {
+  padding: 5px;
+}
+.post-item * {
+  transition: .3s linear;
+}
+.item-content {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.245);
+  /* background: linear-gradient(45deg, #6d00a764 0%, #ee64ce77 50%, #23007b7d 100%);  */
+  backdrop-filter: blur(50px);
+  padding: 30px;
+}
+.item-icon {
+  margin: 0 0 7px 7px;
+}
+.item-icon:before {
+  content: "";
+  font-family: FontAwesome;
+  color: #f8cfff;
+  font-size: 70px;
+  line-height: 1;
+  transition-delay: .1s;
+}
+.item-icon.friend:before {
+  content: "\f004";
+}
+.item-icon.music:before {
+  content: "\f001";
+}
+.item-icon.diamond:before {
+  content: "\f219";
+}
+.item-icon.group:before {
+  content: "\f0c0";
+}
+.item-icon.smile:before {
+  content: "\f118";
+}
+.item-icon.star:before {
+  content: "\f006";
+}
+.post-item:hover .item-icon, .post-item:hover .item-body h3, .post-item:hover .item-body p {
+  transform: translateY(-8px);
+}
+.item-content:hover{
+  box-shadow: 
+  0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem #fff,
+  0 0 0.8rem #fff,
+  0 0 1.8rem #fff,
+  inset 0 0 1.3rem #fff;
+}
+
+.item-body h3 {
+  transition-delay: .05s;
+  text-align: left;
+}
+
+.item-body p {
+  transition-delay: .1s;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  .post-item {
+     flex-basis: 50%;
+     flex-shrink: 0;
+  }
+}
+@media (min-width: 960px) {
+  .post-item {
+     flex-basis: 33.333333333%;
+  }
+}
+
+.block-div{
+  display: flex;
+  gap: 1rem;
 }
