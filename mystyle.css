@@ -564,7 +564,7 @@ footer{
   width: 100%;
   padding: 1rem 0;
   background:
-    linear-gradient(to right,rgba(51, 0, 88, 0.586), rgba(0, 9, 80, 0.488)),
+  linear-gradient(to right,  rgba(123, 22, 95, 0.748), rgba(96, 37, 122, 0.715), rgba(40, 49, 119, 0.699)),
     repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.123) 40px,
     rgba(249, 243, 179, 0.24) 80px, rgba(255, 255, 255, 0.286) 120px,
     rgba(169, 241, 255, 0.186) 160px, rgba(0, 0, 255, 0.373) 200px,
