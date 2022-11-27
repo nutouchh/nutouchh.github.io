@@ -159,12 +159,7 @@ a{
   text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
-    0 0 21px rgb(79, 72, 255),
-    0 0 42px rgb(128, 0, 197),
-    0 0 82px rgb(128, 0, 197),
-    0 0 92px rgb(154, 0, 197),
-    0 0 102px rgb(171, 0, 197),
-    0 0 150px rgb(150, 0, 173);
+    0 0 21px rgb(255, 255, 255);
 }
 li{list-style: none;}
 
@@ -466,7 +461,7 @@ text-shadow:
 
 body{
   background:
-    linear-gradient(rgba(30, 3, 126, 0.663), rgba(186, 0, 186, 0.636), rgba(47, 2, 129, 0.537)),
+    linear-gradient(to right,  rgba(150, 39, 131, 0.573), rgba(100, 35, 121, 0.616), rgba(54, 32, 132, 0.663)),
     repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.123) 40px,
     rgba(249, 243, 179, 0.24) 80px, rgba(255, 255, 255, 0.286) 120px,
     rgba(169, 241, 255, 0.186) 160px, rgba(0, 0, 255, 0.373) 200px,
@@ -482,6 +477,7 @@ body{
     rgba(109, 1, 167, 0.393) 300px,  rgba(255, 64, 255, 0.389) 350px, rgba(255, 0, 0, 0.082)  370px), 
     rgb(6, 4, 28);
   margin: auto;
+  backdrop-filter: blur(5px);
 }
 
 
@@ -490,6 +486,8 @@ section{
   text-align: justify;
   max-width: 1600px;
 }
+
+
 
 /* БЛОК-СОДЕРЖАНИЕ */
 
@@ -659,7 +657,8 @@ footer{
 /* ............................. ФОРМА ................................ */
 
 form{
-  background: linear-gradient(45deg, #6d00a796 0%, #ee64ce63 50%, #23007b92 100%);
+  background: linear-gradient(45deg, #6d00a796 0%, #ee64ce78 50%, #23007b92 100%);
+  backdrop-filter: blur(50px);
   width:80%;
   margin:1rem auto;
   padding: 1rem;
