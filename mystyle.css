@@ -943,13 +943,8 @@ iframe{
 
 @media (max-width:767px) {
   .cover{
-    /* max-width: none; */
-    /* padding-bottom: 40px; */
-    background-size: auto 100%;
-    background-image: url(foto/cover.JPG);
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-attachment: fixed; */
+    max-width: none; 
+    padding-bottom: 40px;
   }
   
   .cover-div p{
