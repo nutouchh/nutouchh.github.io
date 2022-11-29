@@ -11,11 +11,8 @@ h1{
   color: #fff;
   text-shadow:
     0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 25px rgb(255, 255, 255),
-    1px 1px 27px rgb(45, 38, 126),
-    1px 1px 30px rgb(55, 37, 119);
+    0 0 12px rgb(255, 255, 255),
+    1px 1px 15px rgb(55, 37, 119);
 }   
 
 h2{
@@ -30,9 +27,7 @@ h2{
   text-transform: uppercase;
   text-shadow:
     0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 30px #fff,
-    0 0 50px #fff;
+    0 0 10px #fff;
   background-position: center;
   color: #fff;
   width: auto;
@@ -52,12 +47,9 @@ h2{
   margin: 0 auto;
   left: 0;
   box-shadow: 
-  0 0 .2rem #fff,
-  0 0 .2rem #fff,
-  0 0 2rem #fff,
-  0 0 0.8rem #fff,
-  0 0 1.8rem #fff,
-  inset 0 0 1.3rem #fff;
+  0 0 7px #fff,
+  0 0 10px #fff,
+  inset 0 0 15px #fff;
 }
   
 .line h2:before {
@@ -70,12 +62,9 @@ h2{
   margin: 0 auto;
   right: 0;
   box-shadow: 
-  0 0 .2rem #fff,
-  0 0 .2rem #fff,
-  0 0 2rem #fff,
-  0 0 0.8rem #fff,
-  0 0 1.8rem #fff,
-  inset 0 0 1.3rem #fff;
+  0 0 7px #fff,
+  0 0 10px #fff,
+  inset 0 0 15px #fff;
 }
 
 @media (max-width: 1000px){
@@ -90,12 +79,9 @@ h2{
 hr{
   background-color: #fff;
   box-shadow: 
-  0 0 .2rem #fff,
-  0 0 .2rem #fff,
-  0 0 2rem #fff,
-  0 0 0.8rem #fff,
-  0 0 1.8rem #fff,
-  inset 0 0 1.3rem #fff;
+  0 0 7px #fff,
+  0 0 10px #fff,
+  inset 0 0 15px #fff;
   border: solid 1px #fff;
 }
 
@@ -108,9 +94,8 @@ h3{
   text-align: center;
   color: #fff;
   text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 20px #fff;
+    0 0 5px #fff,
+    0 0 7px #fff;
 }
 
 p, label{
@@ -129,9 +114,8 @@ a{
   font-family: 'Comfortaa', cursive;
   margin: 1rem;
   text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff;
+    0 0 5px #fff,
+    0 0 7px #fff;
 }
 li{list-style: none;}
 
@@ -255,12 +239,9 @@ header{
     height: 2px;
     background-color: #ffffff;
     box-shadow: 
-    0 0 .2rem #fff,
-    0 0 .2rem #fff,
-    0 0 2rem #fff,
-    0 0 0.8rem #fff,
-    0 0 1.8rem #fff,
-    inset 0 0 1.3rem #fff;
+    0 0 5px #fff,
+    0 0 7px #fff,
+    inset 0 0 5px #fff;
   }
   .menu__btn > span::before {
     content: '';
@@ -292,14 +273,7 @@ header{
     display: block;
     padding: 12px 24px;
   }
-  /* .menu__item a {text-shadow: 2px 2px 3px rgba(40, 36, 36, 0.645);} */
-
-  .menu__item :hover {
-    text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 20px #fff;
-  }
+  .menu__item a {text-shadow: 2px 2px 3px rgba(40, 36, 36, 0.645);}
 
   #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
@@ -429,14 +403,18 @@ footer{
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-template-rows: 3rem 2rem 2rem 2rem 2rem; /* шаблон для колонок */
+  grid-template-rows: 3rem 1rem 1.9rem 1.9rem 1.9rem; /* шаблон для колонок */
   gap:10px
 }
 .footer-blocks3 a{ margin: 0; text-shadow: 2px 2px 3px rgba(40, 36, 36, 0.645);}
 
-.f-l-1 , .f-l-2 , .f-l-3{
+.f-l-2 , .f-l-3{
   width: 40%;
   max-width: 70px;
+}
+.f-l-1 {
+  width: 40%;
+  max-width: 90px;
 }
 
 @media (max-width: 720px){
@@ -476,12 +454,9 @@ fieldset{text-align: center;}
 
 input:focus , textarea:focus , select:focus , option:focus{
   box-shadow: 
-      0 0 .2rem #fff,
-      0 0 .2rem #fff,
-      0 0 2rem #fff,
-      0 0 0.8rem #fff,
-      0 0 1.8rem #fff,
-      inset 0 0 1.3rem #fff;
+  0 0 7px #fff,
+  0 0 10px #fff,
+  inset 0 0 15px #fff;
 }
 
 input::placeholder,  button::placeholder , textarea::placeholder ,  option::placeholder{
@@ -632,12 +607,11 @@ input::placeholder,  button::placeholder , textarea::placeholder ,  option::plac
 .grid-container .grid-div:hover {
   border-color: rgb(255, 255, 255);
   box-shadow: 
-    0 0 .2rem #fff,
-    0 0 .2rem #fff,
-    0 0 2rem #fff,
-    0 0 0.8rem #fff,
-    0 0 1.8rem #fff,
-    inset 0 0 1.3rem #fff;
+    0 0 .5rem #fff,
+    0 0 .5rem #fff,
+    0 0 .5rem #fff,
+    0 0 1rem #fff,
+    inset 0 0 .5rem #fff;
 }
 
 .grid-container .grid-div img {
@@ -775,18 +749,16 @@ input::placeholder,  button::placeholder , textarea::placeholder ,  option::plac
 /* ............................. ПРОГРЕСС БАР ............................ */
 
 .progress-line {
-  height: .4rem;
+  height: .2rem;
   position: fixed;
   top: 3.8rem;
   left:0;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.778);
   z-index: 1000;
   box-shadow: 
-    0 0 .1rem #fff,
-    0 0 .2rem #fff,
-    0 0 0.8rem #fff,
-    0 0 1.8rem #fff,
-    inset 0 0 .2rem #fff;
+  0 0 7px #fff,
+  0 0 10px #fff,
+  inset 0 0 15px #fff;
 }
 
 /* ............................. СТРАНИЦА НОВОСТИ  ............................ */
@@ -911,6 +883,9 @@ iframe{
     font-weight:300;
     line-height:normal;
     word-spacing:normal;
+    text-shadow:
+    0 0 3px #fff,
+    0 0 5px #fff;
   }
 }
 .news-section{
@@ -926,7 +901,7 @@ iframe{
 .cover{
   background-image: url(foto/cover.JPG);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-attachment: fixed;
   background-size: cover;
   padding: 100px 20%; 
@@ -945,7 +920,7 @@ iframe{
   border-radius: 10px;
   top: 32%;
   z-index: 1;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
   /* background-color: #00000041; */
 }
 
@@ -957,23 +932,23 @@ iframe{
   font-size: 1.2rem;
   font-weight: 250;
   text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 25px rgb(167, 18, 142),
-    1px 1px 27px rgb(124, 8, 120),
-    1px 1px 30px rgb(172, 17, 133),
-    1px 1px 30px rgb(165, 13, 127);
+    /* 0 0 3px #fff,
+    0 0 4px #fff,
+    0 0 5px #fff, */
+    0 0 10px rgb(254, 157, 226),
+    1px 1px 11px rgb(254, 157, 226),
+    1px 1px 13px rgb(254, 157, 226),
+    1px 1px 17px rgb(254, 157, 226);
 }
 
 @media (max-width:767px) {
   .cover{
-    max-width: none;
+    /* max-width: none; */
     padding-bottom: 40px;
   }
   
   .cover-div p{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 100;
   }
 
@@ -987,13 +962,19 @@ iframe{
 
 @media (max-width: 560px){
   .cover {
-    background-size:  auto 150%;
+    /* background-size:  100%; */
+    background-position: center;
   }
   
 }
 
 .intro{
   text-align: center;
+}
+
+.intro2{
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 
@@ -1056,12 +1037,11 @@ iframe{
 }
 .item-content:hover{
   box-shadow: 
-  0 0 .2rem #fff,
-  0 0 .2rem #fff,
-  0 0 2rem #fff,
-  0 0 0.8rem #fff,
-  0 0 1.8rem #fff,
-  inset 0 0 1.3rem #fff;
+    0 0 .5rem #fff,
+    0 0 .5rem #fff,
+    0 0 .5rem #fff,
+    0 0 1rem #fff,
+    inset 0 0 .5rem #fff;
 }
 
 .item-body h3 {
@@ -1097,9 +1077,8 @@ iframe{
 #timer-counter{
   font-family: 'Comfortaa', cursive;
   color:rgb(255, 255, 255);
-  text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff;
   font-size: 2rem;
 }
+
+
+/* МЕДИА ДЛЯ ВСЕХ СВЕТЯЩИХСЯ ЭЛЕМЕНТОВ */
