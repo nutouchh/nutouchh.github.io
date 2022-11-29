@@ -945,6 +945,10 @@ iframe{
   .cover{
     /* max-width: none; */
     padding-bottom: 40px;
+    background-image: url(foto/coverr.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   }
   
   .cover-div p{
