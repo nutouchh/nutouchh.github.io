@@ -10,7 +10,7 @@ document.onscroll = function () {
 
   progressBar.style.width = progressLine + "%";
 
-  console.log(WindowH);
+  // console.log(WindowH);
 }
 
 // ИНТЕГРАЦИЯ ПОСТОВ ....................................
