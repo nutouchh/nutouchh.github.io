@@ -909,6 +909,8 @@ iframe{
   -webkit-background-position: center;
   -webkit-background-attachment: fixed;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   padding: 100px 20%; 
   padding-bottom: 70px;
   max-width: 1600px;
